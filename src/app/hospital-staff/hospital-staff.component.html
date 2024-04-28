@@ -1,0 +1,42 @@
+<!-- registration.component.html -->
+<app-navbar></app-navbar>
+<form class="form" >
+  <p class="title" style="font-family: 'Montserrat', sans-serif;">welcome to hospital area</p>
+  <p class="message">Make a pre-registration to the newborn</p>
+  <div class="flex">
+      <label>
+          <input class="input" type="number" placeholder="" required [(ngModel)]="childObj1.id" name="id">
+          <span>Id</span>
+      </label>
+
+      <label>
+          <input class="input" type="number" placeholder="" required [(ngModel)]="childObj1.weight" name="weight">
+          <span>weight</span>
+      </label>
+      <label>
+        <input class="input" type="number" placeholder="" required [(ngModel)]="childObj1.height" name="height">
+        <span>height</span>
+    </label>
+  </div>
+
+  <!-- <label> -->
+      <!-- <input class="input" type="text" placeholder="" required [(ngModel)]="childObj.id" name="id"> -->
+      <!-- <span>ID</span>
+  </label> -->
+
+  <label>
+      <input class="input" type="text" placeholder="" required [(ngModel)]="childObj1.gender" name="gender">
+      <span>Gender</span>
+  </label>
+
+  <label>
+      <input class="input" type="date" placeholder="" required [(ngModel)]="childObj1.Date_Of_Birth" name="Date_Of_Birth">
+      <span>Birth Date</span>
+  </label>
+  <label>
+    <input class="input" type="text" placeholder="" required [(ngModel)]="childObj1.health_state" name="health_state">
+    <span>Health state</span>
+</label>
+  <button class="submit" style="font-weight: bolder; font-family:'Montserrat', sans-serif" type="submit" (click)="saveInfo()">Submit</button>
+</form>
+

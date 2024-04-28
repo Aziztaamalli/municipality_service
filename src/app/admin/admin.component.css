@@ -1,0 +1,171 @@
+.well-link {
+  text-decoration: none;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+#admin {
+  min-height:50vh;
+  background-image: linear-gradient(75deg, rgb(6 6 6 / 64%) 8%, transparent),
+    url("https://www.coe.int/documents/11755378/12470425/resources-documents.jpg/f3f23010-2037-4050-9d81-e74a5eb450a4?t=1441986579000");
+  background-position: center;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+
+}
+#nav {
+  display: flex;
+  flex-direction: column;
+}
+#nav ul {
+  text-align: center;
+  margin: 0px 15px;
+  display: none;
+}
+
+#nav ul li {
+  background: white;
+  padding: 15px;
+}
+#nav ul li:nth-of-type(4)::after {
+  content: "\2228";
+  color: #fff;
+  font-size: 10px;
+  vertical-align: top;
+}
+#nav ul li:nth-of-type(1) a {
+  padding-bottom: 10px;
+  border-bottom: 0.25px solid white;
+}
+
+#nav ul li a {
+  color: black;
+  padding: 11em 0em;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+#nav ul li a:nth-of-type(3) {
+  color: black;
+}
+
+
+
+.nav-heading > span {
+  color: white;
+  display: flex;
+  /*gap: 5px;*/
+  align-items: center;
+}
+
+
+.nav-heading > span:hover {
+  color: #f85a40;
+}
+
+
+.nav-links .fa-moon {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links .search {
+  background: white;
+  border-radius: 15px;
+  padding: 0.5em;
+  border: 0.6px solid rgb(171, 162, 162);
+}
+.search-btn {
+  border: none;
+  background: white;
+  margin: 20px 0;
+}
+
+.nav-links input {
+  border: none;
+  outline: none;
+}
+.search-section {
+  background: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+.content {
+  padding-left: 5%;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  padding: 11rem 0;
+}
+.text-content > h1 {
+  width: 440px;
+  font-size: 38px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+  line-height: 55px;
+}
+
+
+.text-content > h4 {
+  font-size: 1.15rem;
+  letter-spacing: 0.35px;
+  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 55px;
+}
+.two-button {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.w-btn {
+  color: #121213;
+}
+.w-btn:hover {
+  background: transparent;
+  color: #121213;
+  border: 0.55px solid #121213;
+  transition: 0.55s;
+}
+.t-btn {
+  background: transparent;
+  border: 0.55px solid white;
+  color: white;
+}
+.t-btn:hover {
+  color: black;
+  background: white;
+  border: none;
+  transition: 0.55s;
+}
+.copyright > p {
+  margin-top: 20px;
+  text-align: start;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

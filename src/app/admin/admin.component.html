@@ -1,0 +1,69 @@
+<section id="admin">
+  <app-navbar></app-navbar>
+  <div class="container">
+    <div class="row">
+      <div class="card border-success-subtle">
+        <div class="card-header bg-white-subtle text-black">
+          <i class="fa fa-file me-2"></i>Doc 1
+        </div>
+        <div class="card-body">
+          <button type="submit" class="btn btn-outline-primary" (click)="displayDoc()">Click Here To Display all documents !!</button>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-danger me-2">Refuse All</button>
+          <button id="convertBtn" type="button" class="btn btn-outline-success">Accept All</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- <div class="row">
+      <a href="#" class="well-link">
+        <div class="card border-success-subtle">
+          <div class="card-header bg-white-subtle text-black">Doc 2</div>
+          <div class="card-body">
+            <button type="button" class="btn btn-outline-secondary">Click Here To Display doc 2 !!</button>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-outline-danger me-2">Refuse</button>
+            <button id="convertBtn" type="button" class="btn btn-outline-success">Accept</button>
+          </div>
+        </div>
+      </a>
+    </div> -->
+    <br>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="card border-success-subtle">
+        <div class="card-header bg-white-subtle text-black">Newborn Data</div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>NewBorn Name and LastName</th>
+                <th>gender</th>
+                <th>Birth Date</th>
+                <th>Parents name</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of AllNewBorns">
+                <td>{{ p.Name }}  {{p.LastName}}</td>
+                <td>{{ p.gender }}</td>
+                <td>{{ p.Date_Of_Birth }}</td>
+                <td>{{ p.Father }} , {{p.Mother}}</td>
+                <!-- <td><img src="{{ p.imageUrl }}" alt="Newborn Image" width="50"></td> -->
+                <td>
+                  <button type="button" class="btn btn-success" (click)="acceptDoc()">Accept</button>
+                  <button type="button" class="btn btn-danger" (click)="refuseDoc()">Refuse</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

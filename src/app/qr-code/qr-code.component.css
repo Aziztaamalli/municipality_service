@@ -1,0 +1,188 @@
+.custum-file-upload {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #e8e8e8;
+  background-color: #212121;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px #e8e8e8;
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 80px;
+  fill: #e8e8e8;
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: #e8e8e8;
+}
+
+.custum-file-upload input {
+  display: none;
+}
+
+.custum-file-upload button {
+  margin-top: 20px; /* Add some space between the input and the button */
+}
+.Btn {
+  --black: #000000;
+  --ch-black: #141414;
+  --eer-black: #1b1b1b;
+  --night-rider: #2e2e2e;
+  --white: #ffffff;
+  --af-white: #f3f3f3;
+  --ch-white: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: var(--night-rider);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: var(--af-white);
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: var(--af-white);
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 5px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+
+
+
+
+
+.icon-conatiner {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 20px 20px 15px 0 #ababab4d;
+  cursor: pointer;
+}
+
+.icon-conatiner svg {
+  width: 50px;
+  height: auto;
+}
+
+.icon-conatiner svg:last-child {
+  position: absolute;
+}
+
+.icon-conatiner:active {
+  animation: press 0.2s 1 linear;
+}
+
+.icon-conatiner:active svg:last-child {
+  animation: bounce 0.2s 1 linear;
+}
+
+.text {
+  color: #666;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  user-select: none;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.92);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: rotate(5deg) translate(20px, -50px);
+  }
+
+  to {
+    transform: scale(0.9) rotate(10deg) translate(50px, -80px);
+    opacity: 0;
+  }
+}
